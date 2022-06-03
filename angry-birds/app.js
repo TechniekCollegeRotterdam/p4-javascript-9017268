@@ -24,6 +24,11 @@ addEventListener("click", function () {
 
 
 
+
+
+
+
+
 window.addEventListener("keydown", function (event) {
        console.log(event.key);
 
@@ -31,6 +36,7 @@ window.addEventListener("keydown", function (event) {
               px = px + 50;
 
               bird.style.left = px + "px";
+              bird.src = "img/b-right.svg";
 
        }
        
@@ -38,21 +44,21 @@ window.addEventListener("keydown", function (event) {
               px = px - 50;
 
               bird.style.left = px + "px";
-
+              bird.src = "img/b-left.svg";
        }
 
        if (event.key == "ArrowUp") {
               px = px + 50;
 
               bird.style.bottom = px + "px";
-
+              bird.src = "img/b-up.svg";
        }
 
        if (event.key == "ArrowDown") {
               px = px - 50;
 
               bird.style.bottom = px + "px";
-
+              bird.src = "img/b-down.svg";
        }
 
 })
